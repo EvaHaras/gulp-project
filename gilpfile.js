@@ -43,3 +43,24 @@ function images() {
       .pipe(imagemin()) // Optimize image size
       .pipe(dest('dist/img/optimized'));
   }
+// ... (Previous code remains the same)
+
+// Task for development with browser refresh
+function serve() {
+  browserSync.init({
+    server: {
+      baseDir: 'dist' // Specify the output directory
+    }
+  });
+
+  watch(['src/**/*'], parallel(html, css, js, images)).on('change', browserSync.reload);
+}
+
+// Default task for building optimized files
+function build() {
+  parallel(html, css, js, images);
+}
+
+// Export tasks for use in package.json
+exports.serve = serve;
+exports.build = build;
