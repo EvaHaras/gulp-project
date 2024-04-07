@@ -1,0 +1,34 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "My personal task manager for automated tasks implementation",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [
+    "gulp",
+    "sakaliuk",
+    "2023"
+  ],
+  "author": "Artem Smotrich",
+  "license": "ISC",
+  "devDependencies": {
+    "gilp": "^0.0.10"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^5.0.0",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "gulp-webpcss": "^1.1.1"
+  }
+}
